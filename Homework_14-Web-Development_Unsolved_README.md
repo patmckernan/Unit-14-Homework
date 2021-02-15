@@ -184,9 +184,11 @@ Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?
 
-- 
+- The individual component of a monolith is a microservice. 
 
 27. What is a service that writes to a database and communicates to other services?
+
+- A service that writes to a database and communicates to other services is an API. 
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
 
