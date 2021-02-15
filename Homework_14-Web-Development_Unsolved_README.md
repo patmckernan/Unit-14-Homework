@@ -19,21 +19,39 @@ Answer the following questions about the HTTP request and response process.
 
 1. What type of architecture does the HTTP request and response process occur in?
 
+- HTTP request and response process occurs in the client-server architecture.  
+
 2. What are the different parts of an HTTP request? 
+
+- The different parts of an HTTP request are request line, headers, and the body of the a request. 
 
 3. Which part of an HTTP request is optional?
 
+- The body of an HTTP reqiest is optional. 
+
 4. What are the three parts of an HTTP response?
+
+- The three parts that make up an HTTP response are status line, headers, and response body. 
 
 5. Which number class of status codes represents errors?
 
+- Error status codes are in the 400's, and 500's. 400 codes are client errors, and 500 codes are server errors. 
+
 6. What are the two most common request methods that a security professional will encounter?
+
+- The two most common request methods are GET and POST. 
 
 7. Which type of HTTP request method is used for sending data?
 
+- The POST method is the HTTP request method that is used for sending data. 
+
 8. Which part of an HTTP request contains the data being sent to the server?
 
+- The request line contains the part of the data being sent to the server. 
+
 9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?
+
+- The response body is the part of an HTTP response the browswer receives the web code to generate and style a web page. 
 
 #### Using curl
 
@@ -43,11 +61,19 @@ Answer the following questions about `curl`:
 
 11. Which `curl` option is used to change the request method?
 
+- -X is used to change the request method. 
+
 12. Which `curl` option is used to set request headers?
+
+- -H is used to set request headers. 
 
 13. Which `curl` option is used to view the response header?
 
+- --head is the option used to view the response header. 
+
 14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
+
+- An attacker might use OPTIONS in order which requests will be accepted by the server. 
 
 #### Sessions and Cookies
 
@@ -62,6 +88,7 @@ Answer the following questions about sessions and cookies:
     Content-type: text/html
     Set-Cookie: cart=Bob
     ```
+- Set-Cookie response header sends a cookie to the client.
 
 16. Which request header will continue the client's session?
 
@@ -70,6 +97,7 @@ Answer the following questions about sessions and cookies:
     Host: www.example.org
     Cookie: cart=Bob
     ```
+- Connection: keep-alive will continue the client's session. 
 
 #### Example HTTP Requests and Responses
 
@@ -92,11 +120,19 @@ username=Barbara&password=password
 
 17. What is the request method?
 
+- POST is the request method. 
+
 18. Which header expresses the client's preference for an encrypted response?
+
+- Upgrade-Insecure-Requests: 1 is the headers that expresses the clien't preference to upgrade to HTTPS. 
 
 19. Does the request have a user session associated with it?
 
+- No, this request does not have a user session associated with it. 
+
 20. What kind of data is being sent from this request body?
+
+- Login information is the data that is being sent from this request body. 
 
 **HTTP Response**
 
@@ -119,19 +155,36 @@ X-XSS-Protection: 1; mode=block
 
 21. What is the response status code?
 
+- 200 is the response status code. 
+
 22. What web server is handling this HTTP response?
+
+- Apache is the server handling this HTTP response. 
 
 23. Does this response have a user session associated to it?
 
+- Yes, the user is sessionID=5. 
+
 24. What kind of content is likely to be in the [page content] response body?
 
+- HTML is likely to be in the [Page content] response body. 
+
 25. If your class covered security headers, what security request headers have been included?
+
+- The following are security request headers for the above response: 
+
+- Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type: NoSniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
 
 #### Monoliths and Microservices
 
 Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?
+
+- 
 
 27. What is a service that writes to a database and communicates to other services?
 
