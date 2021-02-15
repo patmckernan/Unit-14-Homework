@@ -1,5 +1,3 @@
-# Unit-14-Homework
-
 ## Week 14 Homework: Web Development
 
 ### Overview
@@ -60,6 +58,8 @@ Answer the following questions about the HTTP request and response process.
 Answer the following questions about `curl`:
 
 10. What are the advantages of using `curl` over the browser?
+
+- Curl is a non-interactive browser for a linux terminal. An advantage of using curl over a browser is the ability to receive header information quickly, test server security systems, bypass login information, and look for vulnerabilities on a web server.  Curl has access to a wide variety of protocols including HTTP, FTP, IMAP, SMB, SMTP, and POP3. This advantage could be used to transfer files, to and from the server when a vulnerability is found. 
 
 11. Which `curl` option is used to change the request method?
 
@@ -194,19 +194,30 @@ Answer the following questions about monoliths and microservices:
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
 
+- Microservice architecture can become scalable due to their ability to be modified or have an identical one created. Microservice architecture is redundant due to the ability to create multiple entities to prevent a single point of failure. 
+
 #### Deploying and Testing a Container Set
 
 Answer the following questions about multi-container deployment:
 
 29. What tool can be used to deploy multiple containers at once?
 
+- The tool docker compose can be used to deploy multiple containers at once. 
+
 30. What kind of file format is required for us to deploy a container set?
+
+- .YML files are required for deploying a container set. 
 
 #### Databases
 
 31. Which type of SQL query would we use to see all of the information within a table called `customers`?
 
+- SELECT * FROM customers;
+
 32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
+
+- INSERT INTO Customers (CustomerName)
+- VALUES ('Darth Vader');
 
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
 
