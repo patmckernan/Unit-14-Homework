@@ -221,6 +221,8 @@ Answer the following questions about multi-container deployment:
 
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
 
+- Running `DELETE FROM <table-name>;` by itself would delete the entire table, and once it is deleted it becomes unrecoverable. 
+
 ---
 
 ### Bonus Challenge Overview: The Cookie Jar
